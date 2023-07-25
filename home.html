@@ -1,0 +1,64 @@
+  !<!DOCTYPE html>
+  <html lang="en">
+    <head>
+      <meta charset="utf-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+      <!-- ESTILOS PROPIOS -->
+      <link rel="stylesheet" href="./styles/home.css" />
+      <!-- SCRIPTS PROPIOS -->
+      <script defer src="./controllers/home.js"></script>
+      <!-- BOOTSTRAP -->
+      <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+        crossorigin="anonymous"
+      />
+      
+      <!---->
+
+      <title>HOME DEL BANCO</title>
+    </head>
+    <body>
+      <div id="particles-js"></div>
+      <header class="contenedor header">
+          <!-- Barra de navegación -->
+          <nav class="barra-navegacion">
+              <ul>
+                  <li><a href="#">Acerca de</a></li>
+                  <li><a href="#">Eventos</a></li>
+                  <li><a href="#">Filosofía</a></li>
+                  <li><a href="#">Contacto</a></li>
+              </ul>
+          </nav>
+
+          <!-- Título y descripción -->
+          <div class="contenido-descripcion">
+              <div>
+                  <h1 class="titulo">
+                      <span>Bienvenido</span>
+                      <span id="user-info"></span>
+                  </h1>
+                  <article class="descripcion">
+                    <div id="user-info"><!-- prepararlo para llenarlo de info --></div>
+                    <div>
+                      <input id="monto" class="input-monto" type="number">
+                    </div>                   
+                    <button style="color: black;" id="btn-withdraw" type="button" class="btn btn-secondary color: black" >Ingresar Monto</button>
+                    <button style="color: black;" id="btn-get-money" type="button" class="btn btn-secondary" >Retirar Monto</button>
+                    <button style="color: black;" id="btn-logout" type="button" class="btn btn-secondary" >Cerrar Sesión</button>
+                  </article>
+              </div>
+          </div>
+        </header>    
+      </body>
+      <script src="controllers/particles.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <script
+        defer
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"
+      ></script>
+  </html>
